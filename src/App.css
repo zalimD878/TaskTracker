@@ -1,0 +1,129 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h-input-block {
+  width: 60%;
+  display: flex;
+  margin-top: 50px;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+}
+
+.button {
+  top: 11px;
+  display: flex;
+  position: absolute;
+  align-items: stretch;
+  right: 6px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+.list-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  border-bottom: solid 2px #4a3f3f59;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-container {
+  display: flex;
+  width: 100%;
+}
+
+.text-line-through {
+  width: 100%;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.text {
+  width: 100%;
+  font-size: 18px;
+}
+
+.button-del {
+  font-size: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Убираем стандартные стили */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #080808;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* Стили при наведении */
+input[type="checkbox"]:hover {
+  border-color: #888;
+}
+
+/* Стили при активации (нажатии) */
+input[type="checkbox"]:active {
+  transform: scale(0.95);
+}
+
+/* Стили для отмеченного чекбокса */
+input[type="checkbox"]:checked {
+  background-color: #3537389e;
+  border-color: #0607079e;
+}
+
+/* Галочка (псевдоэлемент) */
+/* input[type="checkbox"]:checked::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin: 1px 5px;
+} */
